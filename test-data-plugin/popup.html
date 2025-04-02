@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>随机手机号生成器</title>
+    <style>
+        body {
+            width: 250px;
+            padding: 15px;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 0;
+        }
+
+        .phone-container {
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        #phoneNumber {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2196F3;
+            margin: 10px 0;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+            text-align: center;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .tip {
+            font-size: 12px;
+            color: #666;
+            margin-top: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>随机手机号生成器</h2>
+    <div class="phone-container">
+        <input type="text" id="phoneNumber" readonly />
+        <button id="generateBtn">生成随机手机号</button>
+        <button id="copyBtn">复制到剪贴板</button>
+    </div>
+    <div class="tip">
+        提示：在输入框上点击右键，选择"填入随机手机号"即可自动填充
+    </div>
+
+    <script src="js/popup.js"></script>
+</body>
+
+</html>
